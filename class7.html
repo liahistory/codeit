@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>JavaScript</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/minor.css">
+
+		<!-- Theme used for syntax highlighting of code : tomorrow night blue -->
+		<link rel="stylesheet" href="lib/css/tomorrow-night-blue.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section><!-- Start from HTML with menu code -->
+					<h2>We'll start with the HTML from previous class.</h2>
+				</section>
+				<section><!-- CSS: inline-block -->
+					<section>
+						<h3>CSS</h3>
+						<table>
+							<tr>
+								<th>&nbsp;</th>
+								<th>Height/width</th>
+								<th>New line after</th>
+							</tr>
+							<tr>
+								<td class="right-align"><span class="monocs">inline</span></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="right-align"><span class="monocs">block</span></td class="right-align">
+								<td style="text-align:center;">&#10004;</td>
+								<td style="text-align:center;">&#10004;</td style="text-align:center;">
+							</tr>
+							<tr class="fragment">
+								<td class="right-align"><span class="monocs">inline-block</span></td class="right-align">
+								<td style="text-align:center;">&#10004;</td style="text-align:center;">
+								<td>&nbsp;</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>With <span class="monocs">inline-block</span>,<br>
+							we will make horizontal versions of our vertical menus.</h2>
+					</section>
+				</section>
+				<section><!-- CSS: float and clear -->
+					<section><!-- Demonstration of float -->
+						<h3>CSS</h3>
+						<p class="left-align"><img src="lib/img/blobthinkingglare.png" alt="Thinking, Glaring Blob Emoji" style="float:left;" /> What is the meaning of float? Think of words as a sea, with endless amounts of flowery description and confusing vague nonsense, all a massless glop for an image to float on for the purposes of demonstrating the CSS property <span class="monocs">float</span>.</p>
+						<p class="left-align"><img src="lib/img/blobthinkingglare.png" alt="Thinking, Glaring Blob Emoji" style="float:right;" /> Or perhaps these words exist to bump things around and position them as we would like to see them rather than as any helpful, deep, meaningful message for learning.</p>
+					</section>
+					<section><!-- Explaining float -->
+						<h3>CSS</h3>
+						<table>
+							<tr>
+								<th>Property</th>
+								<th>Values</th>
+							</tr>
+							<tr>
+								<td><span class="monocs">float</span></td>
+								<td><span class="monocs">left</span><br />
+									<span class="monocs">right</span><br />
+									<span class="monocs">none</span></td>
+							</tr>
+						</table>
+						<p><span class="monocs">float</span> sets a state to an HTML element that allows other elements or content to flow around it.</p>
+					</section>
+					<section><!-- float causes some problems -->
+						<h3>CSS</h3>
+						<h2>How <span class="monocs">float</span> works in practice</h2>
+						<div style="width:65%;margin:0 auto;">
+						<div style="float:left;border:solid 5px red;width:200px;">Div 1 floats left, with more and more stuff</div>
+						<div style="border:solid 5px green;">Div 2 that doesn't float</div>
+						<div style="border:solid 5px blue;margin-top:20px;">Div 3 that still doesn't float</div>
+						</div>
+					</section>
+					<section><!-- Explaining clear -->
+						<h3>CSS</h3>
+						<table>
+							<tr>
+								<th>Property</th>
+								<th>Values</th>
+							</tr>
+							<tr>
+								<td><span class="monocs">clear</span></td>
+								<td><span class="monocs">none</span><br />
+									<span class="monocs">left</span><br />
+									<span class="monocs">right</span><br />
+									<span class="monocs">both</span></td>
+							</tr>
+						</table>
+						<p><span class="monocs">clear</span> says which side does NOT allow floating elements</p>
+					</section>
+					<section><!-- Demonstrating clear -->
+						<h3>CSS</h3>
+						<h2>How <span class="monocs">clear</span> works</h2>
+						<div style="width:65%;margin:0 auto;">
+						<div style="float:left;border:solid 5px red;width:200px;">Div 1 floats left, with more and more stuff</div>
+						<div style="border:solid 5px green;">Div 2 that doesn't float</div>
+						<div style="border:solid 5px blue;margin-top:20px;clear:left;">Div 3 that still doesn't float, but has <span class="monocs">clear:left;</span></div>
+						</div>
+					</section>
+					<section><!-- Activity: <div> under menu with floating img -->
+						<ol>
+							<li>Under your menu, insert a <span class="monosp">&lt;div></span><br>&nbsp;</li>
+							<li>Inside the <span class="monosp">&lt;div></span>, insert an <span class="monosp">&lt;img></span>, then a <span class="monosp">&lt;p></span> with some text content<br>&nbsp;</li>
+							<li>Use CSS to make the <span class="monosp">&lt;img></span> float to the left<br>&nbsp;</li>
+						</ol>
+					</section>
+				</section>
+				<section><!-- Introducing JavaScript through examples -->
+					<section><!-- Outlining the important functions of each language -->
+						<h2><span class="monosp">&lt;HTML></span></h2>
+						<h2><span class="monocs">CSS {}</span></h2>
+						<h2><span class="monojs">JavaScript()</span></h2>
+					</section>
+                    <section><!-- HTML: <script> tag -->
+						<h3>HTML</h3>
+						<h2><span class="monosp">&lt;script&gt;</span><br> <span class="monosp">&lt;/script></span></h2>
+					</section>
+					<section><!-- JS: Change content -->
+						<h3>JS: Changing Content</h3>
+<pre><code class="javascript">document.getElementById('example').innerHTML = 'Lorem Ipsum';</code></pre>
+					</section>
+					<section><!-- JS: Quick, generalized explanation for the line of code -->
+						<h3><span class="monojs fragment fade-in-then-semi-out">document</span><span class="monojs fragment fade-in-then-semi-out">.getElementById('example')</span><span class="monojs fragment">.innerHTML</span></h3>
+					</section>
+					<!-- <section><-- JS: Change CSS style --
+						<h3>JS: Change CSS</h3>
+<pre><code class="javascript">document.getElementById('01').style.fontSize = '20px';</code></pre>
+					</section>-->
+				</section>
+				<section><!-- Activity: Writing a JS function -->
+					<section><!-- Description of activity -->
+						<h2>Let's switch between multiple images.</h2>
+					</section>
+					<section><!-- JS: Change HTML attributes -->
+						<h3>JS: Changing HTML attributes</h3>
+<pre><code class="javascript">document.getElementById('imgid').src = 'img2.jpg';</code></pre>
+					</section>
+					<section><!-- HTML: onclick attribute -->
+						<h3>HTML</h3>
+						<h2><span class="monosp">onclick=""</span></h2>
+					</section>
+					<section><!-- JS: function -->
+						<h3>JS: Function</h3>
+<pre><code class="javascript">function functionName() {
+  // JS code
+}</code></pre>
+					</section>
+					<section><!-- JS: Putting everything together -->
+						<h3>JS</h3>
+<pre><code class="javascript">function changeImg() {
+  // What goes in here?
+}</code></pre>
+<pre class="fragment"><code class="javascript">function changeImg() {
+  document.getElementById('imgid').src = 'img2.jpg';
+}</code></pre>
+<pre class="fragment"><code class="html">&lt;h3 onclick="changeImg();">Switch image&lt;/h3></code></pre>
+					</section>
+				</section>
+				<section><!-- HTML: Linking external CSS and JS -->
+					<section><!-- Linking css -->
+						<h3>HTML: .css</h3>
+<pre><code class="html">&lt;link rel="stylesheet" href="main.css"></code></pre>
+						<ul>
+							<li>Goes inside <span class="monosp">&lt;head></span> <span class="monosp">&lt;/head></span></li>
+							<li>We'll just be using it for stylesheets, so no need to change the value for <span class="monosp">rel="stylesheet"</span></li>
+						</ul>
+					</section>
+					<section><!-- Linking js -->
+						<h3>HTML: .js</h3>
+<pre><code class="html">&lt;script src="scripts.js">&lt;/script></code></pre>
+					</section>
+				</section>
+				<section><!-- Setting up github account -->
+					<h1><a href="https://github.com" target="_blank">Github</a></h1>
+				</section>
+			</div><!-- slides -->
+		</div><!-- reveal -->
+
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				],
+				slideNumber:true,
+				transition:'slide',
+				width:'90%'
+			});
+		</script>
+	</body>
+</html>
