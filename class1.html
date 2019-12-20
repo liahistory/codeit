@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to HTML</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css"><!-- presentation theme -->
+		<link rel="stylesheet" href="css/minor.css"><!-- text highlighting additions by Amy -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/tomorrow-night-blue.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><!-- Intro to course and HTML -->
+					<h1 class="left-align" style="line-height:1em;"><span class="monosp">Hyper<br />
+					Text<br />
+					Markup<br />
+					Language</span></h1>
+				</section>
+				<section data-background="lib/img/vscode-icon.png"><!-- Instructions for Visual Studio Code -->
+					<h2>A program to write our code in.</h2>
+				</section>
+				<section><!-- Explain HTML document -->
+					<section><!-- Explain tags -->
+						<h2>Tags</h2>
+						<p>The building blocks of HTML</p>
+						<div class="fragment">
+							<p>Tags are 'names' with angle brackets, written like so:</p>
+							<h3><span class="monosp">&lt;<em>tagname</em>></span></h3>
+						</div>
+					</section>
+					<section><!-- Start and end tags -->
+						<h3>Start / End</h3>
+						<p>The <span class="monosp">&lt;html></span> tag represents an HTML page.</p>
+						<div class="fragment">
+							<ol>
+								<li><span class="monosp">&lt;html></span> is the start of the web page</li>
+								<li><span class="monosp">&lt;/html></span> is the end of the web page</li>
+							</ol>
+							<p>Everything we code for a web page goes between <span class="monosp">&lt;html></span> and <span class="monosp">&lt;/html></span>.</p>
+						</div>
+					</section>
+					<section><!-- Paragraph tag -->
+						<h2 class="fragment" data-fragment-index="1">The <span class="monosp">&lt;p></span> Tag</h2>
+						<p class="left-align"><span class="monosp fragment" data-fragment-index="1">&lt;p></span>Parents For Peace began in 2015 mainly as a support group. Now, in response to resurgent extremist violence, the focus is shifting to policy and prevention work. Members came to Washington to put human faces to a problem typically addressed as a national security issue. They want to reframe extremism as a public health emergency that cuts across race, religion, geography.
+							<span class="monosp fragment" data-fragment-index="1">&lt;/p></span></p>
+					</section>
+					<section><!-- General knowledge about tags -->
+						<table>
+							<tr>
+								<th>&nbsp;</th>
+								<th>Start</th>
+								<th>End</th>
+								<th>&nbsp;</th>
+							</tr>
+							<tr>
+								<td>HTML</td>
+								<td><span class="monosp">&lt;html&gt;</span></td>
+								<td><span class="monosp">&lt;/html&gt;</span></td>
+								<td>Defines the HTML page</td>
+							</tr>
+							<tr>
+								<td>Paragraph</td>
+								<td><span class="monosp">&lt;p&gt;</span></td>
+								<td><span class="monosp">&lt;/p&gt;</span></td>
+								<td>Defines a paragraph</td>
+							</tr>
+						</table>
+						<ol style="margin-top:20px;">
+							<li><em>tagnames</em> are specific keywords usable in HTML; they cannot be just any word</li>
+							<li>Tags are used to define different kinds of content on a web page</li>
+							<li>"Closing your tags" is good practice to follow</li>
+						</ol>
+					</section>
+					<section><!-- Final example before letting them try? -->
+<pre><code class="html">&lt;html&gt;
+  <p>Parents For Peace began in 2015 mainly as a support 
+  group. Now, in response to resurgent extremist 
+  violence, the focus is shifting to policy and 
+  prevention work. Members came to Washington to put 
+  human faces to a problem typically addressed as a 
+  national security issue. They want to reframe extremism 
+  as a public health emergency that cuts across race, 
+  religion, geography.</p>
+&lt;/html&gt;</code></pre>
+					</section>
+				</section>
+				<section><!-- Explain Element -->
+					<h2>An HTML Element</h2>
+					<p style="border:3px solid red;"><span class="monosp">&lt;<em>starttag</em>></span> 
+						<span class="highlight">content</span> 
+					<span class="monosp">&lt;/<em>endtag</em>></span></p>
+					<pre class="fragment"><code class="html"><p>This is an example of an HTML element.</p></code></pre>
+				</section>
+				<section><!-- Basic text formatting -->
+					<section>
+						<p>Let us be <b>bold</b>!</p>
+<span class="fragment">
+<pre><code class="html"><p>Let us be bold!</p></code></pre>
+						<p>The bold tag is &lt;b&gt;. Where would you put it?</p>
+</span>
+<span class="fragment">
+<pre><code class="html"><p>Let us be <b>bold</b>!</p></code></pre>
+</span>
+					</section>
+					<section>
+						<p><em>Challenge</em> the world.</p>
+						<p>The italics tag is &lt;em&gt;.</p>
+<span class="fragment">
+<pre><code class="html"><p><em>Challenge</em> the world.</p></code></pre>
+</span>
+					</section>
+					<section>
+						<p>And eat <u>pineapple pizza</u>.</p>
+						<p>The underline tag is &lt;u&gt;.</p>
+<span class="fragment">
+<pre><code class="html"><p>And eat <u>pineapple pizza</u>.</p></code></pre>
+</span>
+					</section>
+					<section>
+						<h2>Try and write something without closing tags, just to see what happens.</h2>
+					</section>
+				</section>
+				<section><!-- Review -->
+					<h3>Review</h3>
+					<p class="fragment fade-in">Remind me how to make an html file?</p>
+					<p class="fragment fade-in">And what is a tag?</p>
+					<p class="fragment fade-in">How are tags and elements different?</p>
+				</section>
+				<section><!-- Thinking ahead -->
+					<h2>The <span class="highlight">purpose</span> <br />and <span class="highlight">function</span> <br />of a website.</h2>
+				</section>
+				<section><!-- Tag Reference -->
+					<section>
+						<table>
+							<tr>
+								<th>&nbsp;</th>
+								<th>start</th>
+								<th>end</th>
+							</tr>
+							<tr>
+								<td>HTML</td>
+								<td>&lt;html&gt;</td>
+								<td>&lt;/html&gt;</td>
+							</tr>
+							<tr>
+								<td>Paragraph</td>
+								<td>&lt;p&gt;</td>
+								<td>&lt;/p&gt;</td>
+							</tr>
+							<tr>
+								<td>Bold</td>
+								<td>&lt;b&gt;</td>
+								<td>&lt;/b&gt;</td>
+							</tr>
+							<tr>
+								<td>Italics</td>
+								<td>&lt;em&gt;</td>
+								<td>&lt;/em&gt;</td>
+							</tr>
+							<tr>
+								<td>Underline</td>
+								<td>&lt;u&gt;</td>
+								<td>&lt;/u&gt;</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>If you have trouble thinking of what to write</h3>
+						<p class="fragment fade-in">Write an apology to Bob, the turkey you'll eat at the end of this month.</p>
+						<p class="fragment fade-in">In the apology, emphasize the words, <br />"<b>Turkey Heaven</b>"</p>
+					</section>
+				</section>
+			</div><!-- /slides -->
+		</div><!-- /reveal -->
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				],
+				slideNumber:true,
+				transition:'slide',
+				width:'90%'
+			});
+		</script>
+	</body>
+</html>

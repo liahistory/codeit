@@ -1,0 +1,39 @@
+/**
+ * Minor CSS additions to presentation
+ */
+
+.reveal .left-align {
+	text-align:left;
+}
+.reveal .right-align {
+	text-align:right;
+}
+.reveal span.highlight,
+.reveal p.highlight {
+	background-color:darkblue;
+	color:white;
+}
+.reveal .monosp, .reveal .monocs, .reveal .monojs {
+	font-family:'Courier New',monospace;
+	letter-spacing:normal;
+	text-transform:none;
+}
+.reveal .monosp {
+	/*background-color:#147521;*/
+	background-color:#faf746;
+	color:black;
+}
+.reveal .monocs {
+	/*background-color:#3739ad;*/
+	background-color:#3fa7fc;
+	color:#292929;
+}
+.reveal .monojs {
+	background-color:#ad1a1a;
+	color:white;
+}
+.reveal code {
+	font-family: 'Consolas', 'Courier New', monospace;
+	font-size: 1.25em;
+	line-height: 1.25em;
+}
